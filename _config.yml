@@ -2,13 +2,13 @@
 title: University of Maryland
 course_name: Bioinformatics Algorithms, Databases, and Tools
 course_description: "This course will focus on algorithmic, and computational aspects of biological data analysis, and specifically on genomics."
-course_semester: "Spring 2020"
+course_semester: "Fall 2021"
 description: |
     Instructor: Rob Patro
 
-message: Register to our <a href="http://www.piazza.com/umd/spring2020/cmsc423">Piazza page</a> to get announcements via e-mail.
-baseurl: "/CMSC423_S20" # the subpath of your site, e.g. /blog/
-url: "https://rob-p.github.io/CMSC423_S20" # the base hostname & protocol for your site
+message: Register to our <a href="http://www.piazza.com/umd/fall2021/cmsc423">Piazza page</a> to get announcements via e-mail.
+baseurl: "/CMSC423_F21" # the subpath of your site, e.g. /blog/
+url: "https://rob-p.github.io/CMSC423_F21" # the base hostname & protocol for your site
 # githubdir: "rob-p/CMSC858D"
 
 # Author/user information
