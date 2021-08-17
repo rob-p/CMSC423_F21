@@ -22,7 +22,10 @@ Here you'll find an overview of the course — the material I expect we'll cover
     - Office hours : Tues. 4-5PM across from IRB 5138
   - Hadi Yami (hadiyami@cs.umd.edu) Office hours to be posted later this week
     - Office hours : Wed. 4-5PM across from IRB 5138
+* Masking policy : President Pines [provided clear expectations](https://today.umd.edu/articles/umd-reinstate-indoor-mask-mandate-following-county-guidance-653e50ac-9f0e-4842-aacb-edb433dab24a) to the University about the wearing of masks for students, faculty, and staff. Face coverings over the nose and mouth are required while you are indoors at all times. There are no exceptions when it comes to classrooms and laboratories. Students not wearing a mask will be given a warning and asked to wear one, or will be asked to leave the room immediately. Students who have additional issues with the mask expectation after a first warning will be referred to the Office of Student Conduct for failure to comply with a directive of University officials. 
+
   
+
 ## Course Content
 
 **Links**: 
