@@ -91,45 +91,44 @@ The following is a planned schedule of the material we will cover in the course,
   - Midterm 1 (in class)
   
 - Week of Oct 4.
+  - varaints of FM-index / advanced full-text indexing
   - Sequence alignment & dynamic programming
-  - Sequence alignment continued (local and semi-local variants) & linear space
 
 - Week of Oct 11.
-  - Sequence alignment continued (local and semi-local variants) & linear space
+  - Sequence alignment continued (local and semi-local variants)
+  - Sequence alignment continued, linear space & bounded edit distance
   
 - Week of Oct 18.
+  - Seeding / chaining and read alignment; anatomy of a read aligner
+  - Spliced alignment & RNA sequencing
 
 - Week of Oct 25.
-  - Motif finding & Gibbs sampling
-  - Probabilistic sequence modeling 
+  - RNA sequencing and estimating transcript expression
 
 - Week of Nov 1.
-  - Clustering (hierarchical & k-means)
+  - Transcript assembly from RNA-seq
   
 - Week of Nov 8.
-  - April 9 : Midterm 2 (in class)
-  - April 11 : Last day to drop with a `W`
+  - Midterm 2 (in class)
  
 - Week of Nov 15.
-  - RNA-sequencing and estimating gene expression
-  - More probabilistic modeling (sufficient statistics)
+  - Genome sequencing and assembly
+  - The de Bruijn graph and compacted de Bruijn graph
   
 - Week of Nov 22
-  - Phylogenomics, parsimony (small) and maximum likelihood 
+  - Phylogenomics and multiple sequence alignment
   - Thurs. Nov 25 : No class (Thanksgiving)
 
 - Week of Nov 29
-  - Phylogenomics continued
-  - Genome assembly & the de Bruijn graph
+  - Phylogenomics continued parsimony / maximum likelihood
   
 - Dec 6
-  - Genome assembly and the de Bruijn graph continued
+  - Current problems & research topics in computational biology
 
 - Dec 13
-  - Wrap-up and current research topics in computational biology
-  - May 12 : Last day of class
+  - Wrap-up/review
 
-- Dece 15 : Final Exam (8:00-10:00am) **Note: University assigned time different than class time**
+- Dec 15 : Final Exam (8:00-10:00am) **Note: University assigned time different than class time**
 
 ## Course Resources
 
