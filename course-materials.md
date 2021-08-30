@@ -29,9 +29,8 @@ Here you'll find an overview of the course — the material I expect we'll cover
 
 **Links**: 
 
- * In general, _this website_ is the place to look for course content and course news.  Any content that is private / restricted (e.g. grades) will be made available on the ELMS page for this course.  Additionally, you should register on Piazza for this course (links below).
+ * In general, _this website_ is the place to look for course content and course news.  Any content that is private / restricted (e.g. grades) will be made available on the ELMS page for this course.
  * Assignment announcements and deadlines will be posted on the [ELMS page for this course](https://umd.instructure.com/courses/1308064), and grading information will be made available there.
-
  * The course also has a Piazza page for discussions.  Please register for this course on Piazza [here](http:///www.piazza.com/umd/fall2021/cmsc423).
 
 **Textbook(s)**: Based on previous feedback in the course, there is no required textbook for the class. Resources, where relevant, will be provided via links on the course website accompanying the slides or lecture notes. However, this is an _upper-level_ course, and you should _absolutely_ seek out other sources explaining these topics from different angles, using different notations and examples, etc.  Of course, you should also _absolutely_ reach out to the TAs and me if you are having trouble understanding a topic in the course and have been unable to become comfortable with it from the lecture slides and other sources.  Here are some (non-required) textbooks that I personally recommend as references for different topics:
@@ -139,8 +138,7 @@ Assignments will be posted and collected [via ELMS](https://umd.instructure.com/
 
 ## Course Policies
 
-**Coursework and grading**: The coursework will consist of small programming assignments, a couple of larger
-projects, a midterm exam and a final exam. The breakdown of weights for these different assignments will be as follows:
+**Coursework and grading**: The coursework will consist of a number of different programming projects, a midterm exam and a final exam. The breakdown of weights for these different assignments will be as follows:
 
 - Programming assignments - 40%
 - Midterm 1 - 15%
