@@ -44,6 +44,8 @@ You will submit your assignment as a tarball named `CMSC423_F21_A1.tar.gz`.  Whe
 
     When we run your test data, we should get this output.  **NOTE**: Since both the simulator and SCS algorithm contain "random" calls (to generate read positions for the simulator and to break ties in the SCS algorithm), make sure that you always provide explicit seeds to your random number generator so that you get the expected output when run with the test input.
 
+**Turnin** : The assignment turnin will be handled using Gradescope.  We intend to have the infrastructure for this set up by the end of this week, so please check back here for detailed instructions on the submission procedure.
+
 
 ## Part (a), a basic sequencing simulator
 
