@@ -5,7 +5,7 @@ title: "Programming assignment 1"
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf
-due: 2019-09-21
+due: 2019-09-21 11:59:59
 published: true
 ---
 
