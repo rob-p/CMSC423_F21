@@ -6,7 +6,7 @@ title: "Programming assignment 1"
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf
 due: 2019-09-21
-published: false
+published: true
 ---
 
 
