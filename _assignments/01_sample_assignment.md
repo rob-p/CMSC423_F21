@@ -5,7 +5,7 @@ title: "Programming assignment 1"
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf
-due: 2019-09-21 11:59:59
+due: 2019-09-23 11:59:59
 published: true
 ---
 
@@ -42,7 +42,7 @@ You will submit your assignment as a tarball named `CMSC423_F21_A1.tar.gz`.  Whe
      - test_stats.tsv - the statistics file that results from running your simlator with the above parameters.
      - test_recon.fa - the output that results from running your toy assembler `scsbler` on `test_reads.fa` with `min_olap` = 20.
 
-    When we run your test data, we should get this output.  **NOTE**: Since both the simulator and SCS algorithm contain "random" calls (to generate read positions for the simulator and to break ties in the SCS algorithm), make sure that you always provide explicit seeds to your random number generator so that you get the expected output when run with the test input.
+    When we run your test data, we should get this output.  **NOTE**: Since the simulator contains "random" calls (to generate read positions for the simulator), make sure that you always provide explicit seeds to your random number generator so that you get the expected output when run with the test input.
 
 **Turnin** : The assignment turnin will be handled using Gradescope.  We intend to have the infrastructure for this set up by the end of this week, so please check back here for detailed instructions on the submission procedure.
 
@@ -86,6 +86,8 @@ This should be written to a file called `output_stem.stats`.
 In the second part of the assignment, you will implement the greedy algorithm we discussed in class for shortest common superstring as a toy assmbler (let's call it `SCSbler`).  Your program will take as input a file containing a set of "reads" (in `FASTA` format), and will apply the greedy SCS algorithm to these reads.  It will output the approximate shortest common superstring. To "test" your SCS implementation, you can make use of the simulator you built in part (a).  Specifically, you can use the simulator to simulate reads from a known genome, and then attempt to reconstruct them using `SCSbler`.  **I encourage you to play around with these two programs to explore for yourself the effect of different parameters**.  For example, how do read length and depth affect your ability to assemble a single-string from the simulated data?  How does the length of your assembled string compare to the actual underlying genome?  How do these relationships change if the input genome to part (a) has repeats longer than the length of the reads?
 
 Your program for this part should be called `scsbler`.
+
+**Note**: We discussed in class that the greedy SCS algorithm "randomly" chooses among ties (equally good overlaps) during collapsing. This is just another way to say that it "arbitrarily" chooses among the ties.  While randomly choosing is a perfectly valid approach, the randomization of this implementation will make it harder to test and validate.  Thus, when you implement the greedy SCS collapse rule, you should dde-randomize your selection in the following way.  Consider the collapse between strings $$r_i$$ and $$r_j$$, with score $$s_{ij}$$ equal to -overlap($$r_i$$, $$r_j$$).  Here let $$i$$ and $$j$$ just be the **rank** of this string in the input file (i.e. the order in which it was read in, the first string in the input has rank 0, the next has rank 1, etc.).  Now, consider that $$s_{ij}$$ is a best score, but it is tied with some other score $$s_{k\ell}$$.  Rather than break the tie arbitrarily, choose the pair containing the string with the minimum rank.  That is, if min(i, j) < min(k, $$\ell$$), then choose to collapse $$r_i$$ and $$r_j$$, otherwise, choose to collapse $$r_k$$ and $$r_\ell$$.  Note that there _cannot_ be a tie both in the overlap score and the minimum rank, because ranks are all distinct.  Then, when you merge the pair into a new string (merge($$r_i$$, $$r_j$$)) simply give it rank equal to min(i, j).  This should not increase the complexity of your algorithm in any way.  If you are using a heap / priority queue to manage your collapses (as you should be), then it should simply be keyed on the tuple (score, rank), rather than score.
 
 #### Input
 
