@@ -39,7 +39,7 @@ You will submit your assignment as a tarball named `CMSC423_F21_A1.tar.gz`.  Whe
      
      - test_genome.fa - a simple test genome of your creation (this can just be a random string of A,C,G,T or something more sophisticated if you want).  This genome should be *at least* 5000 characters long, but no more than 100000 characters long.
      - test_reads.fa - the result of running your simulator with `read_len` = 100, `target_depth` = 20, `theta` = 0.2, and `genome` = `test_genome.fa`
-     - test_stats.tsv - the statistics file that results from running your simlator with the above parameters.
+     - test_reads.stats - the statistics file that results from running your simlator with the above parameters.
      - test_recon.fa - the output that results from running your toy assembler `scsbler` on `test_reads.fa` with `min_olap` = 20.
 
     When we run your test data, we should get this output.  **NOTE**: Since the simulator contains "random" calls (to generate read positions for the simulator), make sure that you always provide explicit seeds to your random number generator so that you get the expected output when run with the test input.
