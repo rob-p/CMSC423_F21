@@ -93,7 +93,7 @@ Your program for this part should be called `scsbler`.
 
 * `reads` - the path to an input file in `FASTA` format containing a set of reads (possibly with duplicates).  In general, you should not assume that the header for each read is in any particular format (i.e. these need not come from your simulator).
 * `min_olap` - the minimum suffix-prefix overlap between substrings that will be required to consider merging them in the SCS algorithm.
-* `output_name` - the resulting fasta file will be written as a file called `output_name.fa`.
+* `output_name` - the name to use for the resulting output (fasta file).
 
 #### Output
 
