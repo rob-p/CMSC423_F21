@@ -97,5 +97,5 @@ Your program for this part should be called `scsbler`.
 
 #### Output
 
-* `output_name.fa` - the output file of your program. This file should contain (in `FASTA` format) the strings that result from your implementation of the greedy SCS algorithm.  There should be 1 entry in the `FASTA` file for every distinct string you are able to reconstruct.  The header for each entry should be of the format: `>substring_id:length`, where `substring_id` is a serial identifier (starting from 0) of each distinct substring you are writing out and `length` is the number of nucleotides in this substring.  The overall length of your SCS implementation will be the sum of the lengths of these strings.
+* `output_name` - the output file of your program. This file should contain (in `FASTA` format) the strings that result from your implementation of the greedy SCS algorithm.  There should be 1 entry in the `FASTA` file for every distinct string you are able to reconstruct.  The header for each entry should be of the format: `>substring_id:length`, where `substring_id` is a serial identifier (starting from 0) of each distinct substring you are writing out and `length` is the number of nucleotides in this substring.  The overall length of your SCS implementation will be the sum of the lengths of these strings.
 
