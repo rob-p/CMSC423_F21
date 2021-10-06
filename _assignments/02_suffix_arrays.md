@@ -105,6 +105,7 @@ query in the SA and report the results in the `output` file specified in the for
 
 #### `querysa`: Input
 
+* `index` - the path to the binary file containing your serialized suffix array (as written by `buildsa` above).
 * `queries` - the path to an input file in `FASTA` format containing a set of records. **Unlike project 1** you will need to care about both the _name_ and _sequence_ of these fasta records, as you will report the output using the name that appears for a record.  Note, query sequences can span more than one line (headers will always be on one line).
 * `query mode` - this argument should be one of two strings; either `naive` or `simpaccel`. If the string is `naive` you
 should perform your queries using the `naive` binary search algorithm.  If the string is `simpaccel` you should perform 
