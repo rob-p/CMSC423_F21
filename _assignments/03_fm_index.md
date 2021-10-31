@@ -5,7 +5,7 @@ title: "Programming assignment 3"
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf
-due: 2021-11-09 00:11:59
+due: 2021-11-09 11:59:00
 published: true
 ---
 
