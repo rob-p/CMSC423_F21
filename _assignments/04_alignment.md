@@ -82,8 +82,8 @@ score y_start y_end  CIGAR
 The first 3 lines of the `OutputRecord` are simply an identical copy of the `ProblemRecord`.  All of the information you compute is included in the 4th line of the `OutputRecord`, which is a **tab-separated** line.  This line contains 4 pieces of information.
 
 * `score` - this is the optimal score as computed by your dynamic program
-* `y_start` - this the location on the reference string Y where the alignment begins (**for global alignments, this is always 0 and for fitting alignments it may be greater than 0**).
-* `y_end` - this is the location on the reference string Y where the alignemnt ends (**for global alignments, this is always |Y| - the length of Y - for fitting alignments it may be < |Y|**).
+* `y_start` - this the location on the reference string Y where the alignment begins (**for global alignments, this is always 0** and **for fitting alignments it may be greater than 0**).
+* `y_end` - this is the location on the reference string Y where the alignemnt ends (**for global alignments, this is always |Y|** - the length of Y - **for fitting alignments it may be < |Y|**).
 * `CIGAR` - this is the **extended CIGAR** string that specifies the edits that must be made to transform the refernce sequence Y into the query sequence X.  The format of this string is described below.
 
 _Crucially_, your **CIGAR** string must be (1) consistent with your reported score (i.e. `-m` x mismatches + (`-g` x (insertions + deletions)) = score) and (2) walking the strings X and Y and applying the appropriate **CIGAR** operations in order must produce matching strings.
