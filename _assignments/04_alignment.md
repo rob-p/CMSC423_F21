@@ -83,7 +83,7 @@ The first 3 lines of the `OutputRecord` are simply an identical copy of the `Pro
 
 * `score` - this is the optimal score as computed by your dynamic program
 * `y_start` - this the location on the reference string Y where the alignment begins. **For global alignments, this is always 0** and **for fitting alignments it may be greater than 0**.
-* `y_end` - this is the location on the reference string Y where the alignemnt ends. For global alignments, this is always $$\left|Y\right|$$, the length of Y, for fitting alignments it may be $$< \left|Y\right|$$.
+* `y_end` - this is the location on the reference string Y where the alignemnt ends. For global alignments, this is always the length of Y, for fitting alignments it may be less than the length of Y.
 * `CIGAR` - this is the **extended CIGAR** string that specifies the edits that must be made to transform the refernce sequence Y into the query sequence X.  The format of this string is described below.
 
 _Crucially_, your **CIGAR** string must be (1) consistent with your reported score (i.e. `-m` x mismatches + (`-g` x (insertions + deletions)) = score) and (2) walking the strings X and Y and applying the appropriate **CIGAR** operations in order must produce matching strings.
