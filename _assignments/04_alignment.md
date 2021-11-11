@@ -83,7 +83,7 @@ The first 3 lines of the `OutputRecord` are simply an identical copy of the `Pro
 
 * `score` - this is the optimal score as computed by your dynamic program
 * `y_start` - this the location on the reference string Y where the alignment begins (**for global alignments, this is always 0 and for fitting alignments it may be greater than 0**).
-* `y_end` - this is the location on the reference string Y where the alignemnt ends (**for global alignments, this is always |Y| --- the length of Y --- for fitting alignments it may be < |Y|**).
+* `y_end` - this is the location on the reference string Y where the alignemnt ends (**for global alignments, this is always |Y| - the length of Y - for fitting alignments it may be < |Y|**).
 * `CIGAR` - this is the **extended CIGAR** string that specifies the edits that must be made to transform the refernce sequence Y into the query sequence X.  The format of this string is described below.
 
 _Crucially_, your **CIGAR** string must be (1) consistent with your reported score (i.e. `-m` x mismatches + (`-g` x (insertions + deletions)) = score) and (2) walking the strings X and Y and applying the appropriate **CIGAR** operations in order must produce matching strings.
@@ -126,7 +126,14 @@ In your dynamic program, you should obtain the CIGAR string by building it from 
 
 #### An example fitting alignment
 
-Until this point in the specification, we've been focused on global alignment, where all of `X` must align against all of `Y`.  If the mode `fitting` is passed to your program, then you should comptue a `fitting` alignment, where gaps are allowed "for free" before the start of `X` and after the end of `X` in the alignment.  In this case, the starting and ending positions in `Y` need not be 0 and |Y| respectively.  Below is an example of an `OutputRecord` showing the fitting alignment between `X` and `Y` under the same scoring function we discussed above.
+Until this point in the specification, we've been focused on global alignment,
+where all of `X` must align against all of `Y`.  If the mode `fitting` is
+passed to your program, then you should comptue a `fitting` alignment,
+where gaps are allowed "for free" before the start of `X` and after the
+end of `X` in the alignment.  In this case, the starting and ending
+positions in `Y` need not be 0 and |Y| respectively.  Below is an example
+of an `OutputRecord` showing the fitting alignment between `X` and `Y`
+under the same scoring function we discussed above.
 
 ```
 p-3
