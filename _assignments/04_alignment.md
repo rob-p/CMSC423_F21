@@ -151,7 +151,7 @@ This tells us that the alignment between `X` and `Y` starts at index 0 in `X` bu
 TCCACCCTAGTGGA-TATCCAGAAGACCCCCTTGTT
 ```
 
-Here, you can see that we have "slid" `X` optimally along `Y` to find the best alignment that is global with respect to `X` and local with respect to `Y`.  The score of this alignemnt is -7 as it has 1 gap and 3 mismatches.  Given this is a fitting alignment, there is no score deduction for the unmatched bases of `Y` before `X` or the unmatched bases of `Y` after `X`.
+Here, you can see that we have "slid" `X` optimally along `Y` to find the best alignment that is global with respect to `X` and local with respect to `Y`.  The score of this alignemnt is -7 as it has 1 gap and 4 mismatches.  Given this is a fitting alignment, there is no score deduction for the unmatched bases of `Y` before `X` or the unmatched bases of `Y` after `X`.
 
 ### Grading
 
