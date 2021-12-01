@@ -79,7 +79,7 @@ An example of an `OutputRecord` is :
 
 ```
 p-0 1
--7	157368	12=1I1X1=2X1=1X1=
+157368  -7  12=1I1X1=2X1=1X1=
 ```
 
 This was computed with `m` = 1 and `g` = 3, so the score of a mismatch is -1, the score of a gap is -3, and the score of a match is 0.  For details about the meaning of the **CIGAR** string and how it should be formed, please refer to the specification for [Project 4](https://rob-p.github.io/CMSC423_F21/assignments/04_alignment).
